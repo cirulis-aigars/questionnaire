@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#quiz-container {
+  margin-bottom: 20px;
+  text-align: center; /* Center the questions */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  margin: auto;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer #question-counter {
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #d0d0d0;
+  transform: scale(1);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.question {
+  font-size: 1.2em;
+  margin-bottom: 48px;
+}
+
+.answers {
+  justify-content: space-between;
+}
+
+.answer {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  height: 50px; /* Fixed height for answers */
+  margin-bottom: 10px; /* Space between answer buttons */
+}
+
+.answer:hover {
+  background-color: #d0d0d0;
+}
+
+.score-container {
+  text-align: center;
+  margin-bottom: 20px; /* Ensure space between score and retry button */
+}
+
+.retry-button {
+  display: block;
+  margin: 0 auto; /* Center the button */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  background-color: #0056b3;
+}
+
+.divider {
+  margin-bottom: 5px;
+}
+
+.answers .divider:not(:last-child) {
+  margin-right: 18px; /* Add horizontal space between buttons */
+}
